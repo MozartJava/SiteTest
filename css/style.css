@@ -1,0 +1,1212 @@
+body{
+    font: normal 100 % ;
+    background-image: url(../img/background.jpg);
+    width: 100%;
+    height: 2000px;
+    overflow-x:hidden;    
+}
+
+.menu{
+    display: none;
+}
+
+.btn-group.zindex.dropmenu{
+    display: none;    
+}
+
+.form-control:focus, .form-control {
+  border-color: red;
+  border: 0px;
+  box-shadow: none;
+  height: inherit;
+}
+
+.input-group:focus, .input-group {
+  border-color: red;
+  border: 0px;
+  box-shadow: none;
+  height: inherit;
+}
+
+input:focus{outline:none;}
+
+header .input-group-btn:last-child>.btn:focus{
+    border: 0px;
+}
+
+.input-group-btn{
+    height: 27px; 
+    padding: inherit;
+}
+
+header, .slider, .content, footer{
+    width: 960px;    
+    margin: 0 auto;
+    border-right:1px solid #9b8e8e;
+    border-left: 1px solid #9b8e8e;
+    min-width: 320px;
+}
+
+.dropdown-menu{
+    border: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: 0px;
+    box-shadow: 0px 0px 0px;
+    background-color: #e1d4c1;
+    padding: 0px 0;
+    margin: 0px 0 0;
+    min-width: 145px;
+}
+
+.dropdown-menu li a{
+    width: inherit;
+    height: 32px;
+    line-height: 1.9em;
+}
+
+.dropdown-menu li a:hover{
+    color: #454545;
+    background-color: #9e9e9e; 
+}
+
+.open>.dropdown-menu.last{
+    margin-left: -30px;    
+}
+
+.open>.dropdown-menu.last img{
+    margin-left: 60%;
+}
+
+.open>.dropdown-menu.home img{
+    margin-left: 10%;
+}
+
+.open>.dropdown-menu.aboutUs img{
+    margin-left: 25%;
+}
+
+.open>.dropdown-menu.portfolio img{
+    margin-left: 30%;
+}
+
+.open>.dropdown-menu.news img{
+    margin-left: 40%;
+}
+
+.headerLogo{
+    width: 100%;
+    display: inline-flex;
+    padding:0 1.041666666%;
+    padding-top: 30px;
+    height: 80px;
+    background-color: #eae1d2;
+}
+
+.headerLogo h1{ 
+    width: 80.3208333%;
+    margin: 0 auto;
+    height: 27px;'
+    padding: 0px;
+    line-height: 0.8em;
+    font-size: 2.53em;
+}
+.headerLogo .input-group{
+    width: 185px; 
+    height: 27px;
+}
+
+header .input-group-btn:last-child>.btn{
+    border-left: 0px;
+    border: 0px;
+    text-align: center;
+    height: 27px;
+    padding-right: 6px;
+    padding-top: 4px;
+    background-color: white;
+}
+
+header .input-group .form-control:first-child{
+    border-right: 0px;    
+    padding-left: 10px;   
+}
+
+.headerMenu{
+    margin: inherit;
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    background-color: #ae461c;
+    -webkit-transition: height 3s ease-in-out;
+}
+
+.HeaderMenuMobile{
+      display: none;      
+  }
+
+.btn-default {
+    color: #ffffff;
+    background-color: rgba(210, 85, 85, 0);
+    border-color: #ccc;
+    border: 0px;
+}
+
+.btn-default:active {
+    color: #333;
+    background-color: rgba(210, 85, 85, 0);
+    border-color: #ccc;
+    border: 0px;
+    	-webkit-box-shadow: 0 px 0px #333;
+	-moz-box-shadow: 0 0px 0px #333;
+	box-shadow: 0 0px 0px #333;
+}
+
+.btn-default:focus, .btn-default:hover, .open>.dropdown-toggle.btn-default {
+    color: #333;
+    background-color: rgba(210, 85, 85, 0);
+    border-color: #ccc;
+    border: 0px;
+    
+    
+}
+
+.btn-group.open .dropdown-toggle {
+  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,0);
+  box-shadow: inset 0 3px 5px rgba(0,0,0,0); */
+}
+
+.btn-default:hover{
+  color: #333;
+  background-color: rgba(210, 85, 85, 0);
+  border-color: #ccc;
+  border: 0px;
+}
+
+
+header .headerMenu .btn-group{
+    height: 30px;
+    line-height: 1.6em;
+    margin-top: 0.7em;
+    font-weight: bold;
+}
+
+header .headerMenu .btn-group img{
+    display: block;
+    width: 7px;
+    margin: 0 auto;
+    margin-left: 11%;
+    position: relative;
+    bottom: 3px;
+    margin-bottom: -4px;
+}
+
+.open>.dropdown-menu {
+  display: block;
+  display: block;
+  margin-left: 13px;
+}
+
+#myCarousel{
+    margin: auto;
+    min-height: 520px;
+    -webkit-transition: min-height 0.2s ease-in;
+}
+
+.carousel-inner{
+    height: auto; 
+    min-height: 520px;
+     -webkit-transition: min-height 0.2s ease-in;
+}
+
+#myCarousel img{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 100%; 
+    min-width: 480px;
+    margin-top: -150px;
+    margin-left: -50%;
+}
+
+.sliderLogoLeft h3{
+    padding-top: 100px;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 10px;
+    position: relative;
+    top:184px;
+    right: 67px;
+    height: 353px;
+    width: 353px;
+    background-color: rgba(213,215,225, 0.3);
+    -webkit-transition:all 0.5s ease-in-out;
+}
+
+.sliderLogoRight h3{
+    padding-top: 100px;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 10px;
+    position: relative;
+    top:184px;
+    left: 275px;
+    height: 353px;
+    width: 353px;
+    background-color: rgba(213,215,225, 0.3);
+    -webkit-transition:all 0.5s ease-in-out;
+}
+
+.carousel-control, .carousel-control{
+  color: #fff;
+  text-decoration: none;
+  filter: alpha(opacity=90);
+  outline: 0;
+  opacity: 0.5;
+  -webkit-transition:all 0.2s ease-in-out;
+}
+
+.carousel-control:focus, .carousel-control:hover {
+  opacity: 0.9;
+}
+
+.content{
+    background-color: #eae1d2;
+    height: 1254px;
+}
+
+.content .services{
+    display: flex;
+    margin: 0;
+    padding: 20px 1%;
+    height: 381px;
+    background-color: #eae1d2;
+    border-bottom: 1px dotted #9b8e8e;
+    -webkit-transition:all 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+.content .services>div{
+    margin: 0 auto;
+    width: 23.1%;
+    background-color: #e3d6c3;
+    height: 340px;
+        text-align: center;
+    border: 1px solid #ddd1c0;
+    -webkit-transition:all 0.2s ease-in-out;
+    box-shadow: 5px rgba(208, 196, 180, 0.2);
+
+}
+
+.content .services .servicesImg{
+    width:45.7%;
+    margin: auto;
+    padding-top: 18px;
+    -webkit-transition:all 0.2s ease-in-out;
+}
+
+.content .services .servicesImg img{
+    width: 100%;
+}
+
+.content .services h4{
+    color: #555555;
+    width: 100%;
+    text-align: center;
+    margin-top: 31px;
+    margin-bottom: -4px;
+    min-height: 38px;
+}
+
+.content .services span{
+    color: #555555;
+    width: 100%;
+    text-align: center;
+    line-height: 1.9em;
+}
+
+.content .readMore{
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-top: 33px;
+    height: 188px;
+    background-color: #ad4419;
+}
+
+.content .readMore span{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.55em;   
+    color: white;
+    margin-top: 9px;
+}
+
+.content .readMore h1{
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 700
+}
+
+.content .readMore .btn{
+    display: block;
+    margin: 0 auto;
+    margin-top: 12px;
+    color: #ad4419;
+    background-color: #e2d4c1;
+    width: 110px;
+    text-align: color;
+    font-weight: 700; 
+    text-align: center;
+    border-radius: 5px;
+    height: 30px;
+    line-height: 1.43em;
+    -webkit-transition:all 0.05s ease-in-out;
+}
+
+.content .readMore .btn:hover{
+    background-color: #fff;
+    
+}
+
+
+.latestNews{
+   
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-transition:all 1s ease-in-out;
+}
+
+.latestNews>h4{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 235px;
+    margin-bottom: 14px;
+    -webkit-transition:all 1s ease-in-out;
+}
+
+.latestNews>div{
+     
+    width: 50%;  
+    display: flex;
+    flex-flow: row wrap;
+    padding: 8px;
+    padding-top: 9px;
+    height: 168px;
+    background-color: #f0eae0;
+    -webkit-transition:all 1s ease-in-out;
+}
+
+
+
+.latestNews>div h4{
+    padding-top: 0px;
+    height: 1em;
+    margin-top: 1px;
+    -webkit-transition:all 1s ease-in-out;
+}
+
+.latestNews>h4{
+    width: 100%;
+    margin-top:20px;
+    padding-left: 9px;
+    margin-bottom: 16px;
+    -webkit-transition:all 1s ease-in-out;
+}
+
+.latestNews .newsContent{
+    color: #666666;
+    margin-left: 21px;    
+    width: 73%;
+    height: 101px;
+    font-size:20px;
+    -webkit-transition:all 1s ease-in-out;
+}
+
+.latestNews .newsContent span{
+    margin-top: 13px;  
+    padding-left: 2px;
+    line-height: 1.8em;
+    height: 26px;
+-webkit-transition:all 1s ease-in-out;
+}
+
+.latestNews .newsContent .btn{
+     display: block;
+    margin-top: 13px;
+    margin-left: 2px;
+    color: #fff;
+    background-color: #b34718;
+    width: 100px;
+    text-align: color;
+    text-align: center;
+    border-radius: 4px;
+    height: 30px;
+    line-height: 1.40em;
+    -webkit-transition:all 1s ease-in-out;
+}
+
+.textover{
+    width: 63%px;
+    height: 68px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+
+}
+
+.textover span{
+    
+}
+
+
+.latestNews{ 
+}
+
+
+@media only screen and (max-width: 959px) {
+    
+  body {
+   <!-- background: #333;-->
+  }
+    
+  header, .slider, .content, footer{
+    width: 100%;    
+  }
+    
+  .headerLogo{
+    padding:30px 5% 0 5%;
+   }
+    
+    #myCarousel{
+        min-height: 350px;
+    }
+    
+    .carousel-inner{
+        min-height: 350px;
+    }
+    
+    .sliderLogoLeft h3{
+        padding-top: 40px;
+        height: 200px;
+        top: 16px;
+        font-size: 2.5em;
+        right: 0px;
+        width: 55%;
+        height: 200px
+    }
+    .sliderLogoRight h3{
+        padding-top: 40px;
+        height: 200px;
+        top: 16px;
+        font-size: 2.5em;
+        right: 0px;
+        left: 233px;
+        width: 55%;
+    }
+    .content .services{
+    display: flex;
+    padding: 20px 11px;
+    height: 350px;
+    flex-flow: row wrap;
+         -webkit-transition-timing-function: cubic-bezier(.42, 0.9, 10, 1);
+    }
+    .content .services>div{
+    margin: 0 auto;
+    width: 22.9%;
+    background-color: #e3d6c3;
+    height: 310px;
+        text-align: center;
+        -webkit-transition:all 0.5s ease-in-out;
+
+
+
+    }
+    .content .services h4{
+    color: #555555;
+    width: 100%;
+    text-align: center;
+    margin-top: 14px;
+    margin-bottom: 3px;
+    font-size: 1em;;
+        -webkit-transition:all 1s ease-in-out;
+        
+    }
+    
+    .latestNews .newsContent span{ 
+    padding-left: 2px;
+    line-height: 1.8em;
+    height: 26px;
+        margin-top: 0px;
+
+}
+
+.latestNews .newsContent .btn{
+     display: block;
+    margin-top: 12px;
+    margin-left: 2px;
+    color: #fff;
+    background-color: #b34718;
+    width: 100px;
+    text-align: color;
+    text-align: center;
+    border-radius: 4px;
+    height: 30px;
+    line-height: 1.40em;
+    -webkit-transition:all 0.05s ease-in-out;
+}
+    
+    .latestNews .newsContent{
+    margin-left: 21px;    
+    width: 63%;
+        height: 102px;
+    }
+    
+     .latestNews .newsContent h4{
+         font-size: 0.7em;
+
+    }
+    .textover{
+        margin-top: 15px;
+    width: 63%px;
+    height: 27px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+
+}
+}
+
+@media only screen and (max-width: 720px) {
+  body {
+   <!-- background: #ff0000;-->
+  }
+
+  .headerLogo h1{ 
+    width: 60%;
+  }
+
+  .headerLogo .input-group{
+        width: 30%; 
+        height: 27px;
+    }
+  .headerMenu{
+      justify-content: center;
+  }
+     #myCarousel{
+        min-height: 280px;
+        max-height: 280px;
+}
+
+.carousel-inner{
+    min-height: 280px;
+    max-height: 280px;
+}
+    .sliderLogoLeft h3{
+        padding-top: 40px;
+        height: 177px;
+        top: -35px;
+        font-size: 2.4em;
+        right: 0px;
+        width: 60%;
+    }
+     .sliderLogoRight h3{
+        padding-top: 40px;
+        height: 177px;
+        top: -52px;
+        font-size: 2.4em;
+        right: 0px;
+        left: 156px;
+        width: 60%;
+    }
+     .content .services{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px 11px;
+    height: 680px;
+    
+    }
+    .content .services>div{
+    margin: 0 auto;
+    width: 45%;
+    background-color: #e3d6c3;
+    height: 310px;
+        text-align: center;
+        margin-bottom: 20px;
+
+    }
+    .content .services h4{
+    color: #555555;
+    width: 100%;
+    text-align: center;
+    margin-top: 14px;
+    margin-bottom: -1px;
+    font-size: 1em;;
+    }
+    .content .readMore{
+    height: 170px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding-top:29px; 
+    padding-left: 1%;
+    padding-right: 2%;
+    }
+    .content .readMore h1{
+    font-size: 2em;
+    }
+    .content .readMore span{
+    font-size: 1.33em;
+    }
+        .latestNews .newsContent span{ 
+    padding-left: 2px;
+    line-height: 1.8em;
+    height: 26px;
+        margin-top: 0px;
+
+}
+
+.latestNews .newsContent .btn{
+     display: block;
+    margin-top: 52px;
+    margin-left: 2px;
+    color: #fff;
+    background-color: #b34718;
+    width: 100px;
+    text-align: color;
+    text-align: center;
+    border-radius: 4px;
+    height: 30px;
+    line-height: 1.40em;
+    -webkit-transition:all 0.05s ease-in-out;
+}
+    
+    .latestNews .newsContent{
+    margin-left: 21px;    
+    width: 53%;
+        height: 102px;
+    }
+    
+     .latestNews .newsContent h4{
+         font-size: 0.8em;
+         
+
+    }
+    .textover{
+        margin-top: 15px;
+    width: 61%;
+    height: 27px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+        display: none;
+
+}
+}
+
+@media only screen and (max-width: 568px) {
+  body {
+  <!--  background: #00ff31; -->
+  }
+    
+  .headerLogo{
+      height: 110px;      
+  }
+  
+  .headerLogo{
+      display: block;      
+  }
+
+  .headerLogo h1{ 
+    font-size: 1.83em;
+    width: 100%;
+    text-align: center;
+  }
+
+  .headerLogo .input-group{
+      margin: 0 auto;
+        width: 230px; 
+        height: 27px;
+      margin-top: 10px;
+    }
+  .headerMenu.HeaderMenuDesktop button{
+      padding: 0px;
+      padding-top: 6px;
+      padding-left: 15px;
+      -webkit-appearance:none;
+      
+  }
+    
+    #myCarousel{
+        min-height: 0px;
+        max-height: 260px;
+}
+
+.carousel-inner{
+    min-height: 260px;
+    max-height: 260px;
+}
+    
+    .open>.dropdown-menu.portfolio{
+        margin-left: -30px;
+    }
+    .open>.dropdown-menu.portfolio img{
+        margin-left: 50%;
+    }
+    
+    .sliderLogoLeft h3{
+        padding-top: 40px;
+        height: 156px;
+        top: -52px;
+        font-size: 1.8em;
+        right: 0px;
+        width: 55%;
+    }
+     .sliderLogoRight h3{
+        padding-top: 40px;
+        height: 156px;
+        top: -52px;
+        font-size: 1.8em;
+        right: 0px;
+        left: 156px;
+        width: 55%;
+    }
+      .content .services{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px 11px;
+    height: 600px;
+    
+    }
+    .content .services>div{
+    margin: 0 auto;
+    width: 45%;
+    background-color: #e3d6c3;
+    height: 270px;
+        text-align: center;
+       margin-bottom: 20px;
+    }
+    
+      .content .readMore{
+    height: 134px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding-top:15px; 
+    padding-left: 1%;
+    padding-right: 2%;
+    }
+    .content .readMore h1{
+    font-size: 1.5em;
+    }
+    .content .readMore span{
+    font-size: 1.1em;
+    }
+    
+    .latestNews .newsContent .btn{
+        margin: auto;
+     display: block;
+    margin-top: 52px;
+    color: #fff;
+    background-color: #b34718;
+    width: 100px;
+    text-align: color;
+    text-align: center;
+    border-radius: 4px;
+    height: 30px;
+    line-height: 1.40em;
+    -webkit-transition:all 0.05s ease-in-out;
+}
+    
+    .latestNews>div{
+        height: 235px;
+    }
+    
+    
+    .latestNews .newsContent{
+    margin-left: 21px;    
+    width: 52%;
+        height: 102px;
+        margin: 0 auto;
+    }
+    
+     .latestNews .newsContent h4{
+         font-size: 0.8em;
+         text-align: center;
+         margin: 0 auto;
+
+    }
+    
+     .latestNews .img{ 
+       margin: 0 auto;
+         width: 50%;
+         padding: 0 auto;
+    }
+    
+     .latestNews img{ 
+       margin: 0px;
+         width: 100%;
+    }
+    .textover{
+        margin-top: 15px;
+    width: 61%;
+    height: 27px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+        display: none;
+
+}
+}
+
+@media only screen and (max-width : 480px){
+    .headerMenu.HeaderMenuDesktop .btn-group.headerNews, .headerMenu.HeaderMenuDesktop .btn-group.headerContact{
+        display: none;
+    }
+    .HeaderMenuMobile{
+      display: inline-flex;  
+     width: 100%;
+     
+    }
+    
+    .headerMenu{
+        display: none;    
+    }
+    
+    .headerMenu.HeaderMenuDesktop button{
+      padding: 6px 12px;
+  }
+    #myCarousel{
+        min-height: 0px;
+        max-height: 260px;
+}
+
+.carousel-inner{
+    min-height: 260px;
+    max-height: 260px;
+}
+     .sliderLogoLeft h3{
+        padding-top: 40px;
+        height: 156px;
+        top: -52px;
+        font-size: 1.4em;
+        right: 0px;
+        width: 70%;
+    }
+    .sliderLogoRight h3{
+        padding-top: 40px;
+        height: 156px;
+        top: -52px;
+        font-size: 1.4em;
+        right: 0px;
+        left: 61px;
+        width: 70%;
+    }
+    .menu {
+  width: 300px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  padding-top: 42px;
+  background-color: #AE461C;
+  z-index: 99999;
+    }
+    .btn-group.zindex.dropmenu{
+    display: block;    
+    }
+    
+    .btn-group.zindex.dropmenu button{
+        position: fixed;
+        top: 64px;
+        background-color: #a94819;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+        z-index: 999999999;
+    }
+    
+    .menu{
+    display: block; 
+    width: 198px;
+    }
+    .menu button{
+        outline: 0;
+        width: 198px;
+        text-align: left;
+        -webkit-appearance:none;
+    }
+    .menu button:focus{
+        outline: 0;
+        -webkit-appearance:none;
+    }
+    .menu button:active, btn{
+        outline: 0;
+        -webkit-appearance:none !important;
+    }
+    
+    .menu .buttonMenu{
+        color: #333;
+        background-color:#eae1d2;
+        border-radius: 0px;
+        -webkit-transition:all 0.2s ease-in-out;
+        
+    }
+    
+    .btnFocus>h3{  
+    }
+    
+    .menu .buttonMenu:hover{
+        background-color:#9e9e9e;
+    }
+    
+    .menu .buttonMenu:focus{
+        background-color:#9e9e9e;
+    }
+    
+    .buttonMenu{
+        background-color:#9e9e9e;
+        height: 30px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    .btnFocusMenu{
+        height: 0;
+        overflow: hidden;
+        -webkit-transition:all 0.2s ease-in-out;
+    }
+    
+    .menu .buttonMenu h4{
+        text-align: center;
+        line-height: 0.65em;
+    }
+    .btn:focus,.btn:active {
+   outline: none !important;
+        box-shadow: 0px;
+    }
+    .menu {
+  width: 198px;
+  position: fixed;
+  left: -198px;
+  height: 100%;
+  z-index: 99999;
+}
+    
+       .content .readMore{
+    height: 190px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding-top:15px; 
+    padding-left: 4%;
+    padding-right: 4%;
+    }
+    .content .readMore h1{
+    font-size: 2.0em;
+    }
+    .content .readMore span{
+    font-size: 1.1em;
+    }
+}
+
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    
+}
+
+h2{
+    margin: 0;     
+    color: #666;
+    padding-top: 90px;
+    font-size: 52px;
+    font-family: "trebuchet ms", sans-serif;    
+}
+.item{
+    background: 0;    
+    text-align: center;
+    height: 300px !important;
+}
+.carousel{
+    margin-top: 20px;
+}
+
+.carousel-indicators .active {
+  width: 42px;
+  height: 11px;
+  margin: 2px;
+  background-color: rgba(172, 68, 24, 0.5);
+  border: 1px solid rgba(126, 105, 96, 0.19);
+}
+
+.carousel-indicators li{
+  border: 1px solid rgba(126, 105, 96, 0.19);
+  background-color: rgba(160, 159, 162, 0.5);;
+  border-radius: 0px;   
+  width: 42px;
+  height: 11px;
+  margin: 2px;
+}
+
+.carousel-control.left{ 
+}
+
+#myCarousel .carousel-control.left img{
+    display: block;
+   position: absolute;
+    min-width: 44px;
+    width: 44px;
+    margin: 0;
+    margin-top: -30px;
+    margin-left: -15px;
+    opacity: 1;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+#myCarousel .carousel-control.right img{
+    display: block;
+   position: absolute;
+    min-width: 44px;
+    width: 44px;
+    margin-top: -30px;
+    margin-left: -20px;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+#myCarousel .carousel-control.right img{
+    display: block;
+   position: absolute;
+    min-width: 46px;
+    width: 46px;
+    margin-top: -30px;
+    margin-left: -49px;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+
+#myCarousel .carousel-control.left .sliderLeftImgActive, #myCarousel .carousel-control.right .sliderRightImgActive{
+    display: block;  
+    opacity: 0;
+    margin-top: -30px;
+}
+
+#myCarousel .carousel-control.left .sliderLeftImgActive{
+    margin-top: -32px;
+}
+
+#myCarousel .carousel-control.left:hover .sliderLeftImg, #myCarousel .carousel-control.right:hover .sliderRightImg{
+      opacity: 0;
+}
+
+#myCarousel .carousel-control.left:hover .sliderLeftImgActive, #myCarousel .carousel-control.right:hover .sliderRightImgActive{
+      display: block;
+    opacity: 1;
+}
+
+button{
+    -webkit-appearance:none;
+}
+
+.btn-group:active {
+  	-webkit-box-shadow: 0 3px 5px #333;
+	-moz-box-shadow: 0 3px 5px #333;
+	box-shadow: 0 3px 5px #333;
+}
+
+.btn-group:focus {
+  outline: none;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.btn-group:hover {
+  outline: none;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.test{
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+/*
+root element for the scrollable.  when scrolling occurs this
+element stays still.
+*/
+.portfolio {
+    border-top: 1px dotted #9b8e8e;
+    height: 217px;
+    border-bottom: 1px dotted #9b8e8e;
+}
+
+.portfolio h4{
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 8px;
+    height: 54px;
+    line-height: 3.3em;
+}
+
+.scrollable {
+  /* required settings */
+  position:relative;
+  overflow:hidden;
+  width: 100%;
+  height:140px; 
+    margin-right: 0px;
+  
+}
+
+.items>div img{ 
+    margin-right: 1.2%;
+}
+
+.items>div img:last-child{ 
+    margin-right:0px;
+}
+
+.sliderPortfolio{
+    margin: 0 auto;
+    overflow: hidden; 
+    width: 98.45%;
+}
+
+.next.browse.right,.prev.browse.left{
+    display: block;
+    height: 40px;
+    width: 40px;
+}
+/*
+root element for scrollable items. Must be absolutely positioned
+and it should have a extremely large width to accommodate scrollable
+items.  it's enough that you set width and height for the root element
+and not for this element.
+*/
+.scrollable .items {
+  /* this cannot be too large */
+  width:320%;
+  position:absolute;
+}
+ 
+/*
+a single item. must be floated in horizontal scrolling.  typically,
+this element is the one that *you* will style the most.
+*/
+.items>div {
+  display: flex;
+    width:33.8%;
+    
+}
+
+#myModal2 .modal dialog{
+    background: red!important;    
+}
+
+Img { max-width: 100%;
+
+}
