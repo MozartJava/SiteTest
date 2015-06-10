@@ -39,10 +39,6 @@ $("document").ready(function () {
         
     });
 
-var	gogo = 5;
-var hoho = 4;
-
-var plus = gogo + hoho;
 
 
     
