@@ -39,51 +39,23 @@ $("document").ready(function () {
     });
 
 
+    var timerId = setTimeout(function(){
+        setTimeout(function tick() {
+            if($("html").width() > 480){
+               closeMenu();
+
+            }
+            
+            timerId = setTimeout(tick, 100);
+}),1}, 1);
 
     
     $('.dropmenu').click(function(){
-    		var menuUp = $('.menu');
-            var btn = $('.btn-group.zindex.dropmenu button');
-            
-    		if ($('body').css('margin-left') == '0px') {
-                btn.animate({
-                    left: 198
-    			}, 400);
-
-    			menuUp.animate({
-    				left: 0
-    			}, 400);
-    			$('body').animate({
-    				marginLeft: 198
-    			}, 400);
-                $('.menu').addClass('aa');
-
-    		} else if($('body').css('margin-left') == '198px'){
-                btn.animate({
-                   left: 0
-    			}, 400);
-
-    			menuUp.animate({
-    				left: -198
-    			}, 400);
-    			$('body').animate({
-    				marginLeft: 0
-    			}, 400);
-             $('.menu').removeClass('aa');
-    		};
-    
-
-        $('.btnFocus').click(function(){
-    		var menu = $(this).next();
-    		//var
-    		if (menu.css('height') == '0px') {
-    			menu.css('height','120px');
-           } else if(menu.css('height') == '120px'){
-                menu.css('height','0px');
-           };
-    	});
+        dropmenu();
     });
     
+
+
 
 
     var cc = function closea () {
@@ -144,28 +116,28 @@ $("document").ready(function () {
            }
     };
 
-    $(function(){
-        var portflio = $('.partSlider');
-            var procents = 20;
-            var margin = $('.partSlider').css('margin-left')
-            var result = parseInt(margin);
-            var width = $('.partSlider').css('width');
-            var resultWidth = parseInt(width);
-            var procent = (result/resultWidth)*100;
-        var sliderTime = setInterval(function(){if(procent >= -80 && procent < -70){
-            portfolioLeft();    console.log('пора влево');
-        } else if(procent >= 0 && procent < 15){
-            portfolioRight();
-        }},3000);
-
-        $(function(){$('.partSlider').hover(function(){
-            sliderTime = setInterval(portfolioRight,4000);
-        clearInterval(sliderTime);
-    },function(){
-        sliderTime = setInterval(portfolioRight,4000);
-    });
-
-
+   // $(function(){
+   //     var portflio = $('.partSlider');
+   //         var procents = 20;
+   //         var margin = $('.partSlider').css('margin-left')
+   //         var result = parseInt(margin);
+   //         var width = $('.partSlider').css('width');
+   //         var resultWidth = parseInt(width);
+   //         var procent = (result/resultWidth)*100;
+   //     var sliderTime = setInterval(function(){if(procent >= -80 && procent < -70){
+   //         portfolioLeft();    console.log('пора влево');
+   //     } else if(procent >= 0 && procent < 15){
+   //         portfolioRight();
+   //     }},3000);
+//
+  //      $(function(){$('.partSlider').hover(function(){
+  //          sliderTime = setInterval(portfolioRight,4000);
+  //      clearInterval(sliderTime);
+  //  },function(){
+  //      sliderTime = setInterval(portfolioRight,4000);
+ //   });
+//
+//});
 
     $('.portfolioRight').click(function(){
     		var portflio = $('.partSlider');
@@ -182,16 +154,24 @@ $("document").ready(function () {
 
     		if (procent >= 0 && procent < 15) {
     			portflio.css('margin-left', "-100%");
+                $('.leftpassive').css('opacity','0.7');
 
            } else if(procent > -35 && procent < 0){
+
                 portflio.css('margin-left', '-200%');
+               $('.leftpassive').css('opacity','0.7');
+
            } else if(procent > -35 && procent < 15){
                 portflio.css('margin-left', '-300%');
+               $('.leftpassive').css('opacity','0.7');
            } else if(procent > -70 && procent < 40){
                 portflio.css('margin-left', '-300%');
+               $('.leftactive').css('opacity','0');
             };
 
      });
+
+
 
        $('.portfolioLeft').click(function(){
     		var portflio = $('.partSlider');
@@ -208,20 +188,69 @@ $("document").ready(function () {
 
     		if(procent < -60){
                 portflio.css('margin-left', '-200%');
+                 $('.leftactive').css('opacity','1');
            } else if(procent >-61 && procent < -35){
                 portflio.css('margin-left', '-100%');
            } else if(procent >-34 && procent < -1){
                 portflio.css('margin-left', '0px');
+               $('.leftpassive').css('opacity','0');
            }
      });
 
+  $('.carousel').carousel({interval:0});
 
- $('#myCarousel').carousel({interval:10000})(jQuery);
+var closeMenu = function (){
+     var menuUp = $('.menu');
+            var btn = $('.btn-group.zindex.dropmenu button');
 
+                if($('body').css('margin-left') == '198px'){
+                btn.animate({
+                   left: 0
+    			}, 400);
+
+    			menuUp.animate({
+    				left: -198
+    			}, 400);
+    			$('body').animate({
+    				marginLeft: 0
+    			}, 400);
+             $('.menu').removeClass('aa');
+    		};
+    }
+
+var dropmenu = function (){
+    		var menuUp = $('.menu');
+            var btn = $('.btn-group.zindex.dropmenu button');
+
+    		if ($('body').css('margin-left') == '0px') {
+                btn.animate({
+                    left: 198
+    			}, 400);
+
+    			menuUp.animate({
+    				left: 0
+    			}, 400);
+    			$('body').animate({
+    				marginLeft: 198
+    			}, 400);
+                $('.menu').addClass('aa');
+
+    		} else if($('body').css('margin-left') == '198px'){
+                btn.animate({
+                   left: 0
+    			}, 400);
+
+    			menuUp.animate({
+    				left: -198
+    			}, 400);
+    			$('body').animate({
+    				marginLeft: 0
+    			}, 400);
+             $('.menu').removeClass('aa');
+    		};
+};
     
     });
-    
-});
 
 
-});
+

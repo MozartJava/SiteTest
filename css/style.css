@@ -1,3 +1,33 @@
+ @font-face {
+    font-family: MerrySans; /* Имя шрифта */
+    src: url(../fonts/merriweathersansbold.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: MerryReg; /* Имя шрифта */
+    src: url(../fonts/rriweathersansregular.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: NotoSansReg; /* Имя шрифта */
+    src: url(../fonts/notosansregular.ttf); /* Путь к файлу со шрифтом */
+}
+
+input::-webkit-input-placeholder { color: red; }
+
+
+header .input-group .form-control:first-child{
+    font-family: NotoSansReg;
+    font-size: 12px;
+    border-radius: 0px;
+    height: 26px;
+    background-color: #fbfbfb;
+    padding-top: 8px;
+    margin-left: 1px;
+    color: #b2b2b2;
+
+}
+
 body{
     font: normal 100 % ;
     background-image: url(../img/background.jpg);
@@ -6,9 +36,19 @@ body{
 }
 
 .menu{
-    display: none;
+    width: 198px;
+  position: fixed;
+  left: -100%;
+  top: 0;
+  height: 100%;
+  padding-top: 42px;
+  background-color: #AE461C;
+  z-index: 99999;
 }
 
+.menu .buttonMenu{
+    display: none;
+}
 .btn-group.zindex.dropmenu{
     display: none;    
 }
@@ -18,7 +58,7 @@ body{
   border: 0px;
   box-shadow: none;
   height: inherit;
-}
+}.men
 
 .input-group:focus, .input-group {
   border-color: red;
@@ -38,12 +78,13 @@ header .input-group-btn:last-child>.btn:focus{
     padding: inherit;
 }
 
-header, .slider, .content, footer{
+header, .slider, .content, .footer{
     width: 960px;    
     margin: 0 auto;
     border-right:1px solid #9b8e8e;
     border-left: 1px solid #9b8e8e;
     min-width: 320px;
+    font-weight: normal;
 }
 
 .dropdown-menu{
@@ -61,6 +102,7 @@ header, .slider, .content, footer{
     width: inherit;
     height: 32px;
     line-height: 1.9em;
+    -webkit-transition:all 0.1s ease-in-out;
 }
 
 .dropdown-menu li a:hover{
@@ -68,8 +110,11 @@ header, .slider, .content, footer{
     background-color: #9e9e9e; 
 }
 
+.carousel-indicators {
+  bottom: -6px;
+}
 .open>.dropdown-menu.last{
-    margin-left: -30px;    
+    margin-left: -36px;
 }
 
 .open>.dropdown-menu.last img{
@@ -118,15 +163,18 @@ header .input-group-btn:last-child>.btn{
     border-left: 0px;
     border: 0px;
     text-align: center;
-    height: 27px;
+    height: 26px;
     padding-right: 6px;
-    padding-top: 4px;
-    background-color: white;
+    padding-top: 2px;
+    background-color:#fbfbfb ;
+    border-radius: 0px;
+     box-shadow: 0px 1px 11px -3px #ffffff;
 }
 
 header .input-group .form-control:first-child{
     border-right: 0px;    
     padding-left: 10px;   
+     box-shadow: 0px 1px 11px -3px #ffffff;
 }
 
 .headerMenu{
@@ -136,6 +184,13 @@ header .input-group .form-control:first-child{
     height: 50px;
     background-color: #ae461c;
     -webkit-transition: height 3s ease-in-out;
+      font-family: Merryreg;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+header .headerMenu .btn-group button:hover{
+    color: red;
 }
 
 .HeaderMenuMobile{
@@ -148,6 +203,11 @@ header .input-group .form-control:first-child{
     border-color: #ccc;
     border: 0px;
 }
+
+header .headerMenu .btn-group button:hover{
+    color: black;
+}
+
 
 .btn-default:active {
     color: #333;
@@ -184,8 +244,13 @@ header .input-group .form-control:first-child{
 header .headerMenu .btn-group{
     height: 30px;
     line-height: 1.6em;
-    margin-top: 0.7em;
+    margin-top: 9px;
     font-weight: bold;
+
+}
+
+.btn-group>.btn:first-child {
+  margin-left: -5px;
 }
 
 header .headerMenu .btn-group img{
@@ -227,24 +292,30 @@ header .headerMenu .btn-group img{
 }
 
 .sliderLogoLeft h3{
-    padding-top: 100px;
-    font-size: 50px;
+    padding-top: 99px;
+    font-size: 48px;
     font-weight: 700;
+    -webkit-text-stroke: 0.01em #8f8d8d;
+  line-height: 1.2em;
+      letter-spacing: 0.075em;
     text-align: left;
-    padding-left: 10px;
+    padding-left: 3px;
     position: relative;
-    top:184px;
-    right: 67px;
+     top: 182px;
+  right: 79px;
     height: 353px;
     width: 353px;
+    font-family: MerrySans;
     background-color: rgba(213,215,225, 0.3);
     -webkit-transition:all 0.5s ease-in-out;
+
 }
 
 .sliderLogoRight h3{
     padding-top: 100px;
     font-size: 50px;
     font-weight: 700;
+      -webkit-text-stroke: 0.01em #8f8d8d;
     text-align: left;
     padding-left: 10px;
     position: relative;
@@ -252,6 +323,7 @@ header .headerMenu .btn-group img{
     left: 275px;
     height: 353px;
     width: 353px;
+    font-family: MerrySans;
     background-color: rgba(213,215,225, 0.3);
     -webkit-transition:all 0.5s ease-in-out;
 }
@@ -374,7 +446,7 @@ header .headerMenu .btn-group img{
     display: flex;
     flex-flow: row wrap;
     -webkit-transition:all 1s ease-in-out;
-    height: 413px;
+    height: 412px;
     padding-bottom: 20px
 }
 
@@ -462,6 +534,8 @@ header .headerMenu .btn-group img{
 
 
 .latestNews{ 
+      margin-top: -20px;
+    border-top: 1px dotted #9b8e8e;
 }
 
 
@@ -471,7 +545,7 @@ header .headerMenu .btn-group img{
    <!-- background: #333;-->
   }
     
-  header, .slider, .content, footer{
+  header, .slider, .content, .footer{
     width: 100%;    
   }
     
@@ -705,6 +779,9 @@ header .headerMenu .btn-group img{
 }
 
 @media only screen and (max-width: 568px) {
+    .latestNews{
+    height: 553px;
+    }
   body {
   <!--  background: #00ff31; -->
   }
@@ -1030,21 +1107,24 @@ h2{
     margin-top: 20px;
 }
 
+.carousel-indicators li{
+    margin-bottom: 2px;
+}
 .carousel-indicators .active {
-  width: 42px;
-  height: 11px;
-  margin: 2px;
-  background-color: rgba(172, 68, 24, 0.5);
-  border: 1px solid rgba(126, 105, 96, 0.19);
+    width: 39px;
+  height: 9px;
+  background-color: rgba(166, 104, 79, 1);
+     box-shadow: 0px 0px 5px 2px(166, 104, 79, 1);
+    margin-bottom: 2px;
 }
 
 .carousel-indicators li{
   border: 1px solid rgba(126, 105, 96, 0.19);
   background-color: rgba(160, 159, 162, 0.5);;
   border-radius: 0px;   
-  width: 42px;
-  height: 11px;
-  margin: 2px;
+ width: 39px;
+  height: 9px;
+
 }
 
 .carousel-control.left{ 
@@ -1140,7 +1220,6 @@ element stays still.
 */
 .portfolio {
     border-top: 1px dotted #9b8e8e;
-    height: 217px;
     border-bottom: 1px dotted #9b8e8e;
 }
 
@@ -1207,14 +1286,11 @@ this element is the one that *you* will style the most.
     background: red!important;    
 }
 
-Img { max-width: 100%;
-
-}
 
 .partners{
     border-top: 1px dotted #9b8e8e;
     overflow: hidden;
-
+    he
 }
 
 
@@ -1273,18 +1349,25 @@ Img { max-width: 100%;
 }
 
 .footer{
-    display: flex;
-    background-image: url(../img/footer.jpg);
+    border-top: 1px dotted #9b8e8e;;
+    padding-top: 30px;
+    margin-top: -19px;
+      padding-top: 44px;
+  margin-top: -19px;
+    background-color: #eae1d2;
 }
 
 .footer input{
     border-radius: 0px;
+      margin-bottom: 11px;
+  height: 29px;
 }
 
-.footer div{
+.footer .footerposition>div{
     margin-top: 10px;
     width: 30%;
     color:white;
+      width: 32.7%;
 }
 
 .footer div span{
@@ -1302,7 +1385,8 @@ Img { max-width: 100%;
 }
 
 .portfolioLeft, .portfolioRight{
-
+    opacity: 0;
+    -webkit-transition:all 0.2s ease-in-out;
 }
 
 .portfolioArrow{
@@ -1310,3 +1394,181 @@ Img { max-width: 100%;
     justify-content: flex-end;
 }
 
+.portfolioArrow>div{
+       position: relative;
+    left: -37px;
+    top:-2px;
+}
+
+.portfolioArrow .active{
+    position: relative;
+    left: 20px;
+    opacity: 1;
+}
+
+.portfolioArrow .passive{
+    opacity: 1;
+
+}
+.rightpassive, .rightactive{
+        opacity: 1;
+}
+
+.rightactive{
+    position: relative;
+    right: 5px;
+
+}
+
+.rightactive:hover {
+    opacity: 0;
+
+}
+.rightpassive{
+    opacity: 1;
+}
+
+.leftpassive, .leftactive{
+   position: relative;
+    left: 66px;
+    opacity: 1;
+
+
+}
+.leftpassive:hover{
+    opacity: 1!important;
+}
+
+.leftactive:hover{
+    opacity: 1!important;
+}
+
+.leftpassive{
+    opacity: 0;
+}
+
+.leftpassive:hover{
+    opacity: 1;
+}
+
+
+.portfolioArrow>div{
+    position: relative;
+};
+
+.partners.portfolioPartners{
+    height: 363px;
+    margin-bottom: 51px;
+}
+
+.footerposition{
+    width: 100%;
+    display: flex;
+}
+
+.footerposition .form{
+    margin-top: 18px!important;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  padding-left: 55px;
+}
+
+.form-control:focus, .form-control{
+    height: 29px;
+}
+
+.messege{
+    height: 59px!important;
+}
+
+.srcSocial{
+    padding: 16px;
+    display: flex;
+}
+
+.srcSocial>div{
+          margin: 0 auto;
+    display: inline-flex;
+    padding-left: 12px;
+
+}
+
+.srcSocial>div a{
+      margin: 0 auto;
+    margin-right:5px;
+   display: block;
+    width: 26px;
+    -webkit-transition:all 0.2s ease-in-out;
+
+}
+
+.srcSocial>div a:hover{
+    opacity: 0.5;
+}
+
+.footer .fon{
+      background-image: url(../img/footer.jpg)
+}
+
+.srcSocial>div a img{
+
+}
+
+.arrows{
+    cursor: pointer;
+}
+
+.copyrigt{
+    height: 50px;
+    background-color: #2e2d2d;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.copyrigt span{
+    display: inline-block!important;
+    width: 122px;
+    border-right: 1px solid white;
+    height: 16px;
+    line-height: 1.2em
+}
+
+a{
+    text-decoration:none;
+    color: white;
+
+}
+
+a:focus, a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.copyrigt span a {
+    margin-left: 5px;
+}
+
+.sliderLogoRight h3{
+
+}
+h2{
+    margin: 0;
+    color: #666;
+    padding-top: 90px;
+    font-size: 52px;
+    font-family: "trebuchet ms", sans-serif;
+}
+.item{
+    background: #333;
+    text-align: center;
+    height: 300px !important;
+}
+.carousel{
+    margin-top: 20px;
+}
+
+
+
+input::-webkit-input-placeholder {color:#b2b2b2!important}
